@@ -19,8 +19,6 @@ if($q=="Google") {
   $xml=("http://feeds.feedburner.com/GoogleEarthBlog");
 }elseif($q=="SEAENG") {
   $xml=("http://feedpress.me/searchenginejournal");
-}elseif($q=="WEB") {
-  $xml=("http://feeds.feedburner.com/Webworkerdaily");
 }
 
 $xmlDoc = new DOMDocument();

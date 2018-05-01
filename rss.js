@@ -18,3 +18,15 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+var newvari;
+var x=document.getElementById("change2");
+var y=document.getElementById("change");
+function myFunction(newvari) {
+    if(newvari=='Feeds'){
+    	x.style.display="none";
+    	y.style.display="block";
+    }else{
+    	x.style.display="block";
+    	y.style.display="none";
+    }
+}

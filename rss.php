@@ -14,10 +14,10 @@
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	  <p style="color: white; padding-left: 15px; margin-top: 20px;">sandalukalpanee@gmail.com</p>
 	  <hr style="background-color: white; color: white;">
-	  <a href="#">Feeds</a>
-	  <a href="#">Account Settings</a>
+	  <a href="">Feeds</a>
+	  <a href="">Account Settings</a>
 	  <hr style="background-color: white; color: white;">
-	  <a href="#">Log Out</a>
+	  <a href="main.php">Log Out</a>
 	</div>
 	<div id="main">
 		<header style="background-color: black; color: white; height: 150px; padding-top: 6px;">
@@ -52,5 +52,7 @@
 		<br>
 		<div id="rssOutput" style="background-color: #F1F1F2; text-align: center;">RSS-feed will be listed here...</div>
 		</div>
+		
+	</div>
 </body>
 </html>
