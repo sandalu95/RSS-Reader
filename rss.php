@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="rss.js"></script>
+	<script type="text/javascript" src="showRSS.js"></script>
 </head>
 <body>
 	<div id="mySidenav" class="sidenav">
@@ -33,10 +34,23 @@
 	  	</div>
 	  </header>
 
-		<form class="example" action="/action_page.php" style="margin:auto;max-width:600px; width: 600px; padding-top: 40px; padding-left: 40px;">
-		  <input type="text" placeholder="Search.." name="search2" style="width:300px; margin-right: 10px;">
-		  <button type="submit" style="margin-top: 8px;"><i class="fa fa-search"></i></button>
+		<div class="container" style="margin-top: 60px;">
+		<form>
+		      <label for="sel1">Select the site:</label>
+		      <select class="form-control" id="sel1" onchange="showRSS(this.value)">
+		      	<option value="">Select an RSS-feed:</option>
+		        <option value="Google">Google News</option>
+		        <option value="NBC">NBC News</option>
+		        <option value="NTD">NTD News</option>
+		        <option value="BBC">BBC News</option>
+		        <option value="POPSCI">Popular Science</option>
+		        <option value="DIGINS">Digital Inspiration</option>
+		        <option value="GOOEARTH">Google Earth</option>
+		        <option value="SEAENG">Search Engine</option>
+		      </select> 
 		</form>
-	</div>
+		<br>
+		<div id="rssOutput" style="background-color: #F1F1F2; text-align: center;">RSS-feed will be listed here...</div>
+		</div>
 </body>
 </html>
