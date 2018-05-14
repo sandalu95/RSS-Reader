@@ -11,9 +11,9 @@
 	<div id="main">
 		<header style="background-color: black; color: white; height: 150px; padding-top: 6px;">
 	  	<div id="page-logo">
-	  		<p class="logo-element" id="logo-first">FEE</p>
-	  		<p class="logo-element" id="logo-second">D</p>
-	  		<p class="logo-element" id="logo-third">IGGER</p>
+	  		<p class="logo-element" id="logo-first" style="padding-left: 640px;">FEE</p>
+	  		<p class="logo-element" id="logo-second" style="display: inline-block;">D</p>
+	  		<p class="logo-element" id="logo-third" style="display: inline-block;">IGGER</p>
 	  	</div>
 	  </header>
 	  	  <div class="container main-form">

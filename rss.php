@@ -29,8 +29,8 @@
 	  	</span>
 	  	<div id="page-logo">
 	  		<p class="logo-element" id="logo-first">FEE</p>
-	  		<p class="logo-element" id="logo-second">D</p>
-	  		<p class="logo-element" id="logo-third">IGGER</p>
+	  		<p class="logo-element" id="logo-second" style="display: inline-block;">D</p>
+	  		<p class="logo-element" id="logo-third" style="display: inline-block;">IGGER</p>
 	  	</div>
 	  </header>
 
@@ -39,11 +39,9 @@
 		      <label for="sel1">Select the site:</label>
 		      <select class="form-control" id="sel1" onchange="showRSS(this.value)">
 		      	<option value="">Select an RSS-feed:</option>
-		        <option value="Google">Google News</option>
 		        <option value="NBC">NBC News</option>
 		        <option value="NTD">NTD News</option>
 		        <option value="BBC">BBC News</option>
-		        <option value="POPSCI">Popular Science</option>
 		        <option value="DIGINS">Digital Inspiration</option>
 		        <option value="GOOEARTH">Google Earth</option>
 		        <option value="SEAENG">Search Engine</option>

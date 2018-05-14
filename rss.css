@@ -61,18 +61,23 @@
 }
 .logo-element{
     margin: 0;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bolder;
     font-family: 'Patua One', cursive;
 }
 #logo-first{
-    padding-left: 650px;
+    padding-left: 600px;
+    float: left;
+    padding-top: 20px;
 }
 #logo-second{
-    padding-left: 700px;
+    /*padding-left: 700px;*/
+    font-size: 90px;
+    height: 100px;
+
 }
 #logo-third{
-    padding-left: 722px;
+    /*padding-left: 722px;*/
 }
 .main-form{
     margin-top: 30px;
@@ -198,6 +203,6 @@ span.psw {
        float: none;
     }
     .cancelbtn {
-       width: 100%;
+       width: 100%
     }
 }

@@ -3,16 +3,12 @@
 $q=$_GET["q"];
 
 //find out which feed was selected
-if($q=="Google") {
-  $xml=("http://news.google.com/news?ned=us&topic=h&output=rss");
-} elseif($q=="NBC") {
+if($q=="NBC") {
   $xml=("http://rss.msnbc.msn.com/id/3032091/device/rss/rss.xml");
 }elseif($q=="NTD") {
   $xml=("http://feeds.feedburner.com/ndtvnews-top-stories");
 }elseif($q=="BBC") {
   $xml=("http://feeds.bbci.co.uk/news/rss.xml");
-}elseif($q=="POPSCI") {
-  $xml=("https://www.popsci.com/rss-science.xml?loc=contentwell&lnk=science&dom=section-1");
 }elseif($q=="DIGINS") {
   $xml=("http://feeds.feedburner.com/labnol");
 }elseif($q=="GOOEARTH") {
@@ -34,10 +30,10 @@ $channel_desc = $channel->getElementsByTagName('description')
 ->item(0)->childNodes->item(0)->nodeValue;
 
 //output elements from "<channel>"
-echo("<p><a href='" . $channel_link
-  . "'>" . $channel_title . "</a>");
 echo("<br>");
-echo($channel_desc . "</p>");
+echo("<p><a href='" . $channel_link
+  . "'style=\"color:Black; font-weight:bold; font-size:25px; text-decoration:underline;\">" . $channel_title . "</a>");
+echo("<br> <br>");
 
 //get and output "<item>" elements
 $x=$xmlDoc->getElementsByTagName('item');
@@ -48,9 +44,13 @@ for ($i=0; $i<=2; $i++) {
   ->item(0)->childNodes->item(0)->nodeValue;
   $item_desc=$x->item($i)->getElementsByTagName('description')
   ->item(0)->childNodes->item(0)->nodeValue;
-  echo ("<p><a href='" . $item_link
-  . "'>" . $item_title . "</a>");
-  echo ("<br>");
-  echo ($item_desc . "</p>");
+  $item_date=$x->item($i)->getElementsByTagName('pubDate')
+  ->item(0)->childNodes->item(0)->nodeValue;
+  echo ("<p style=\"text-align:left;\"><a href='" . $item_link
+  . "'  style=\"background:black; color:white; font-size:20px; margin-left:20px; padding:5px;\">" . $item_title . "</a>");
+  echo ("<br><p style=\"text-align:left; margin-left:20px; font-size:12px;\"> Published On: <i>");
+  echo ($item_date . "</i></p>");
+  echo ("<p style=\"font-size:15px; text-align:left; padding-left:30px; padding-right:30px;\">--->");
+  echo ($item_desc . "</p></p><br>");
 }
 ?>
